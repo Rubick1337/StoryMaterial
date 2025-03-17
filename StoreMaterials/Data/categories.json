@@ -1,0 +1,5 @@
+﻿[
+  { "Id": 1, "CategoryName": "Краски" },
+  { "Id": 2, "CategoryName": "Инструменты" },
+  { "Id": 3, "CategoryName": "Крепеж" }
+]

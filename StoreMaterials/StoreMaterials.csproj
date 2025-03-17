@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DocX" Version="4.0.25105.5786" />
+      <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Data\categories.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\materials.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\sales.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Forms\EditSaleForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\AddSaleForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\AddCategoryForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\AddMaterialForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\EditCategoryForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\DeleteCategoryForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\EditMaterialForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\DeleteMaterialForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\ReportForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>

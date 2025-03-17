@@ -1,0 +1,22 @@
+﻿[
+  {
+    "SaleId": 1,
+    "SaleDate": "2023-10-01",
+    "MaterialId": 1,
+    "Unit": "литр",
+    "UnitPrice": 500,
+    "DeliveryCost": 200,
+    "Discount": 0,
+    "CustomerName": "Иванов И.И."
+  },
+  {
+    "SaleId": 2,
+    "SaleDate": "2023-10-02",
+    "MaterialId": 2,
+    "Unit": "шт",
+    "UnitPrice": 1500,
+    "DeliveryCost": 300,
+    "Discount": 10,
+    "CustomerName": "Петров П.П."
+  }
+]
